@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/css/Navbar.css'
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/logo.png'
 import user from '../assets/images/user.svg'
 import search from '../assets/images/search.svg'
 import cartImage from '../assets/images/cartImage.svg'
@@ -26,7 +26,7 @@ const Navbar = ({ cart }) => {
                     <img src={search} alt="search-icon" />
                 </div>
                 <img src={user} alt="user" />
-                <Link to="/cart"><img src={cartImage} alt="cart" /></Link>
+                <Link id="cart-image" to="/cart"><img src={cartImage} alt="cart" /></Link>
                 <span id="cart">{ cart.length }</span>
             </div>
         </nav>

@@ -19,7 +19,6 @@ const Filters = ({ filterList, selectedFilter, setSelectedFilter }) => {
                     <h4>FILTERS:</h4>
                     {newList}
                 </div>
-                <p id="sort">Sort By: <strong>Price Low to High</strong></p>
             </div>
         </div>
     )
