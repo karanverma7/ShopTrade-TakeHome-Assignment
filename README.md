@@ -1,6 +1,6 @@
-# ShopTrade Assignment made by Karan Verma
+# ShoppinGaza Product List Page made in ReactJS
 
-## Assignment Details
+## Added Features:
 
 The web page is able to do the following things:
 
@@ -20,7 +20,7 @@ The web page is able to do the following things:
 ## Getting Started
 
 1. Clone the repository.
-### `git clone https://github.com/karanverma7/ShopTrade-TakeHome-Assignment.git`
+### `git clone https://github.com/karanverma7/ShoppinGaza.git`
 
 In the project directory, you need to:
 
@@ -39,10 +39,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
-
-## Important Note
-
-The API was not returning appropriate data, API returned string instead of JSON data. 
-Hence, I have made use of MOCK data for product list. MOCK data is same as the data
-returned by the API.
-I have manually converted the string API data to a List of objects.
