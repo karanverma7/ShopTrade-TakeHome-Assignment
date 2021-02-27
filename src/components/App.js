@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../assets/css/App.css'
 import Navbar from './Navbar'
@@ -7,19 +8,14 @@ import Breadcrumbs from './Breadcrumbs'
 import Filters from './Filters'
 import Products from './Products'
 import Cart from './Cart'
-import ProductList from '../mock-data/APIdata'
 import bannerObj from '../constants/bannerObj'
 import filterList from '../constants/filterList'
-//import axios from 'axios'
-
+import productAPI from '../constants/productAPI'
 
 const App = () => {
     
     const [ selectedFilter, setSelectedFilter ] = useState({ text: 'All Products', value: "All Products" })
     const [ cart, setCart ] = useState([])
-
-/* API Call to get Product list. 
-
     const [ ProductList, setProductList ] = useState([])
 
     useEffect(() => {
@@ -27,12 +23,9 @@ const App = () => {
     }, []) 
 
     const getProducts = async () => {
-        const response = await axios.get('https://cdn.shopify.com/s/files/1/0455/2176/4502/files/products.json');
-        setProductList(response.data)
+        const response = await axios.get(productAPI);
+        setProductList(response.data.data)
     }
-    console.log(ProductList) 
-    
-*/
    
     return (
         <div>
